@@ -1,6 +1,36 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.content {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: #394867;
+}
+
+.container {
+  display: flex;
+  max-width: max-content;
+}
+
+@media(max-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 480xp;
+  }
 }
